@@ -1,0 +1,19 @@
+{
+  "name": "react-express-kit",
+  "version": "1.0.0",
+  "description": "Bioilerplate for React and Express apps",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix web",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Aleksey ISaev",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^4.0.1",
+    "express": "^4.16.3",
+    "nodemon": "^1.18.4"
+  }
+}
