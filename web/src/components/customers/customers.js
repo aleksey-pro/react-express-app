@@ -19,13 +19,14 @@ class Customers extends Component {
   }
 
   render() {
+    console.log(this.props.customers);
     return (
       <div>
         <h2>Customers</h2>
         <ul>
           {this.props.customers.map(customer => (
             <li key={customer.id}>
-              {customer.firstName} {customer.lastName}
+              {customer.name} {customer.surname}
             </li>
           ))}
         </ul>
